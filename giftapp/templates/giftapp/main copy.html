@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            기프티콘 생성소
+        </title>
+        <!-- <link rel='shortcut icon' href='/static/img/avataaars.svg'> -->
+        <link rel="shortcut icon" href="/static/img/favicon.png">
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            a:visited {
+                color: black;
+            }
+
+            #check-btn {
+                display: none;
+            }
+
+            #checkbtn:checked~.menubars>.menu {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+
+            #submit {
+                display: none;
+            }
+
+            .menu>input:checked~#submit {
+                display: block;
+            }
+
+            header {
+                display: inline-block;
+                position: fixed;
+                top: 0;
+                /* width: 100% */
+                left: 0;
+                right: 0;
+            }
+        </style>
+
+
+        <title>기프티콘꾸미기</title>
+
+
+    </head>
+
+    <body style="background-color:rgb(250, 193, 8);">
+<form method='post'>
+
+        <header style = 'background-color: rgb(255, 166, 0);'>
+            <h1>Gifticon Change Center</h1>
+            <nav>
+                <span>Menu1</span>
+                <span>Menu2</span>
+                <span>Menu3</span>
+            </nav>
+        </header>
+        <br><br><br><br><br><br>
+        <div style="display: block;">
+        <input style='border: none; outline: none; height: 20px;' type="text" name='code' placeholder="코드입력 (슬래시없이)" id='code'>
+        <input style='border: none; outline: none;height: 20px;' type="text" name='date' placeholder='유효기간입력(ex 20000523)' id='date'
+            >
+        <input style='border: none; outline: none;height: 20px;' type="text" name='name' placeholder='상품명' id='name'
+            >
+        </div>
+
+        <input type="checkbox" id='checkbtn'>
+        <label for="'checkbtn">테마선택</label>
+        <ul class="menubars">
+            <h3 class='menu'>
+                <input type="radio" name='theme' id='spring' value='봄테마'><label for="winter">봄테마</label>
+                <input type="radio" name='theme' id='summer' value='여름테마'><label for="winter">여름테마</label>
+                <input type="radio" name='theme' id='autumn' value='가을테마'><label for="winter">가을테마</label>
+                <input type="radio" name='theme' id='winter' value='겨울테마'><label for="winter">겨울테마</label>
+                <input type="submit" id='submit'>
+            </h3>
+        </ul>
+    </form>
+    </body>
+
+</html>

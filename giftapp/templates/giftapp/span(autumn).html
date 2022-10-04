@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>
+        기프티콘 생성소
+    </title>
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        #submit {
+            display: none;
+        }
+
+        .menu>input:checked~#submit {
+            display: block;
+        }
+
+        header {
+            display: inline-block;
+            position: fixed;
+            top: 0;
+            /* width: 100% */
+            left: 0;
+            right: 0;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        #checktheme:checked~.menubars>.menu {
+            display: block;
+        }
+
+        .themebg1 {
+            height: 900px;
+            width: 675px;
+            background-color: wheat;
+            margin: auto;
+        }
+
+        .themebg2 {
+            height: 88%;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+
+        .themeimg {
+            margin: auto;
+            background-image: url('../../static/img/autumn.jpg');
+            height: 94%;
+            width: 93%;
+        }
+
+        #giftdate {
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            border-radius: 2%;
+            border: 3px solid khaki;
+            font-size: 15px;
+        }
+
+        #productform {
+
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        #productname {
+            font-size: 1.5rem;
+            margin:0;
+        }
+    </style>
+
+</head>
+
+
+
+
+<form method='post'>
+
+    <body style="background-color:rgb(250, 193, 8); text-align: center;">
+        <header style='background-color: rgb(255, 166, 0); '>
+            <h1 style='display: inline-block; margin-bottom: 1px;'>Gifticon Change Center</h1>
+            <hr style="border:1px solid rgb(255, 145, 0);">
+            <div style="display: block;">
+                <input style='border: none; outline: none; height: 20px;' type="text" name='code'
+                    placeholder="코드입력(슬래시없이)" id='code' value={{code}}>
+                <input style='border: none; outline: none;height: 20px; margin: 10px;' type="text" name='date'
+                    placeholder='유효기간입력 ex)20000523' id='date' value={{date}}>
+                <input style='border: none; outline: none;height: 20px;' type="text" name='name' placeholder='상품명'
+                    id='name' value = {{name}}>
+            </div>
+            <input type="checkbox" id='checktheme'><label for='checktheme' style="font-size : 1.2rem">테마선택</label>
+            <ul class="menubars">
+                <h3 class='menu'>
+                    <input type="radio" name='theme' id='spring' value='봄테마'><label for="winter">봄테마</label>
+                    <input type="radio" name='theme' id='summer' value='여름테마'><label for="winter">여름테마</label>
+                    <input type="radio" name='theme' id='autumn' value='가을테마'><label for="winter">가을테마</label>
+                    <input type="radio" name='theme' id='winter' value='겨울테마'><label for="winter">겨울테마</label>
+                    <input type="submit" id='submit'
+                        style='display: inline; width: 60px; height : 30px; font-size: medium;'>
+                </h3>
+            </ul>
+        </header>
+
+
+    </body>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <body>
+        <h1>당신의 테마 : {{theme}}</h1>
+
+        <body>
+            <div>
+
+                <div class='themebg1'>
+                    <br>
+                    <div class="themeimg">
+                        <br><br>
+                        <div class="themebg2">
+                            
+                            
+                           
+
+                            <img src='/static/bar.jpg' style="display: inline-block; width:250px; height: 250px;">
+                            <div id="productform">
+                                <img src="/static/img/스타벅스 커피.jpg" style="width: 200px; height='200px">
+                            </div>
+                            <br>
+                            <p id ='productname'>{{name}}</p>
+                            <h1 id='giftdate'>유효기간 : {{year}}년 {{month}}월 {{day}}일 까지</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </body>
+    </body>
+</form>
+
+</html>
