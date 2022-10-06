@@ -1,5 +1,4 @@
 <html>
-<script src="scroll.js"></script>
 <link rel="stylesheet" href="button.css">
 
 <head>
@@ -7,7 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/button.css">
 </head>
 <style>
   body {
@@ -53,118 +53,12 @@
           id='code'>
         <input style='border: none; outline: none;' oninput="getdate()" type="text" name='date' placeholder='유효기간입력'
           id='date'>
-        <button class="w-btn w-btn-indigo" type="button">
-          <a href='#themearea'>
+        <button class="w-btn w-btn-indigo" type="button" onclick="location.href='2page.html'">
             다음단계
-          </a>
         </button>
       </ul>
-
-
-    </div>
-    <div class="btn-1">
-    </div>
-    </p>
-
-    </div>
-    </p>
     </div>
 </body>
 
 <body>
-
-  <!-- 테마선택하는 구역 -->
-  <div calss='themearea' id='themearea' style="padding-top: 100px;">
-
-    <div id='theme' style="width: 80%; height:80%;">
-      <input type="radio" id='spring' name='whether' value='spring' onclick='gettheme(event)'><label for="spring"><img
-          src="../../static/img/spring.jpg"></label>
-      <input type="radio" id='summer' name='whether' value='summer' onclick='gettheme(event)'><label for="summer"><img
-          src="../../static/img/summer.jpg"></label><br>
-      <input type="radio" id='autumn' name='whether' value='autumn' onclick='gettheme(event)'><label for="autumn"><img
-          src="../../static/img/autumn.jpg"></label>
-      <input type="radio" id='winter' name='whether' value='winter' onclick='gettheme(event)'><label for="winter"><img
-          src="../../static/img/winter.jpg"></label>
-      <p>당신이 선택한 테마는</p>
-
-
-
-      <div id='themeresult'></div>
-      <a href="#image">이미지선택하러 고고씽</a>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br>
-</body>
-<div class='imgarea' id='image'>
-  <!-- <div class="springimg"> -->
-  <input type="radio" id='spring1' name='springimg'><label for="spring1" onclick="imgsrc()"><img
-      src="../../static/img/봄1.jpg"></label>
-  <input type="radio" id='spring2' name='springimg'><label for="spring2" onclick="imgsrc()"><img
-      src="../../static/img/봄2.jpg"></label><br>
-  <input type="radio" id='spring3' name='springimg'><label for="spring3" onclick="imgsrc()"><img
-      src="../../static/img/봄3.jpg"></label>
-  <input type="radio" id='spring4' name='springimg'><label for="spring4" onclick="imgsrc()"><img
-      src="../../static/img/봄4.jpg"></label>
-  <!-- </div> -->
-  <input type="radio" id='summer1' name='summerimg'><label for="summer1" onclick="imgsrc()"><img
-      src="../../static/img/여름1.jpg"></label>
-  <input type="radio" id='summer2' name='summerimg'><label for="summer2" onclick="imgsrc()"><img
-      src="../../static/img/여름2.jpg"></label><br>
-  <input type="radio" id='summer3' name='summerimg'><label for="summer3" onclick="imgsrc()"><img
-      src="../../static/img/여름3.jpg"></label>
-  <input type="radio" id='summer4' name='summerimg'><label for="summer4" onclick="imgsrc()"><img
-      src="../../static/img/여름4.jpg"></label>
-
-  <input type="radio" id='autumn1' name='autumnimg'><label for="autumn1" onclick="imgsrc()"><img
-      src="../../static/img/가을1.jpg"></label>
-  <input type="radio" id='autumn2' name='autumnimg'><label for="autumn2" onclick="imgsrc()"><img
-      src="../../static/img/가을2.jpg"></label><br>
-  <input type="radio" id='autumn3' name='autumnimg'><label for="autumn3" onclick="imgsrc()"><img
-      src="../../static/img/가을3.jpg"></label>
-  <input type="radio" id='autumn4' name='autumnimg'><label for="autumn4" onclick="imgsrc()"><img
-      src="../../static/img/가을4.jpg"></label>
-
-  <input type="radio" id='winter1' name='winterimg'><label for="winter1" onclick="imgsrc()"><img
-      src="../../static/img/겨울1.jpg"></label>
-  <input type="radio" id='winter2' name='winterimg'><label for="winter2" onclick="imgsrc()"><img
-      src="../../static/img/겨울2.jpg"></label><br>
-  <input type="radio" id='winter3' name='winterimg'><label for="winter3" onclick="imgsrc()"><img
-      src="../../static/img/겨울3.jpg"></label>
-  <input type="radio" id='winter4' name='winterimg'><label for="winter4" onclick="imgsrc()"><img
-      src="../../static/img/겨울4.jpg"></label>
-</div>
-
-<a href="#result">이제 결과를 확인해보세요!</a>
-
-<div class="'result" id='result'>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<div id='nameresult'></div>
-<div id='coderesult'></div>
-<div id='dateresult'></div>
-</div>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-</form>
-
-
-
-
-
-
-
-<footer>마지막입니다!</footer>
-</body>
-
 </html>
