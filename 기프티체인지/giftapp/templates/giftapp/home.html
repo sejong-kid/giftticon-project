@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        기프티체인지
+        <!-- 첫번째 템플릿 -->
+        <!-- 다음 템플릿 명 'homepost.html' -->
+    </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    
+    <link rel='stylesheet' href="../../static/common.css">
+    <link rel='stylesheet' href="../../static/home.css">
+    <span class='start'>
+        <p>
+            만나서 반가워 기프티체인지야
+        </p>
+        시작하고 싶으면 정보를 입력하고 버튼을 눌러
+        <br>
+        <!-- 버튼 누르면 인풋할 구역이 나타나게 나타나는 효과는 서서히 드러나게? 이쁘게 -->
+        <!-- <a href="#input">버튼!</a> -->
+        <form method ='post'>
+            {% csrf_token %}
+            <span class='inputarea'>
+                <div>
+                    <input type="text" name="name" placeholder="상품이름">
+                    <input type="number" name="pin" placeholder="핀번호입력">
+                    <input type="number" name="date" placeholder="유효기간입력">
+                </div>
+            </span>
+            <button type='submit' id="submitbutton">Enter</button>
+            
+        </form>
+    </span>
+    
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            기프티체인지
+        </title>
+        <!-- 세번째 템플릿 -->
+        <!-- 이전 템플릿 명 'homepost.html' -->
+        <!-- 다음 템플릿 명 'selectthemepost.html' -->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <link rel = 'stylesheet' href="../../static/common.css">
+        <link rel = 'stylesheet' href="../../static/selecttheme.css">
+        <p>테마선택하러 왔구나!<br>
+        우린 봄 여름 가을 겨울에 대한 4가지 계절 테마를 갖고있어<br></p>
+        네가지 테마의 썸네일을 보여줄게 골라봐
+        <form method ='post'>
+            {% csrf_token %}
+            <span class='inputarea' style = 'display: none;'>
+                <div>
+                    <input type="text" name="name" value = '{{name}}'>
+                    <input type="number" name="pin" value ='{{pin}}'>
+                    <input type="number" name="date" value = '{{date}}'>
+                </div>
+            </span>
+            <span class = 'theme' >
+                <ul class = 'themeimgul' style ='column-count: 2;'>
+                    <li>
+                        <input type="radio" name ='whether' value='봄' id='spring'>
+                        <label for="spring"><img src="../../static/img/spring.jpg"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name ='whether' value='여름'id='summer'>
+                        <label for="summer"><img src="../../static/img/summer.jpg"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name ='whether' value ='가을'id='autumn'>
+                        <label for="autumn"><img src="../../static/img/autumn.jpg"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name ='whether' value = '겨울'id='winter'>
+                        <label for="winter"><img src="../../static/img/winter.jpg"></label>
+                    </li>
+                </ul>
+                <input type = 'submit'>
+            </span>
+        <form>
+    </body>
+</html>

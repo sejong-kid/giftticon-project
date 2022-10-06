@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        기프티체인지
+        <!-- 두번째 템플릿 -->
+        <!-- 이전 템플릿 명 'home.html' -->
+        <!-- 다음 템플릿 명 'selecttheme.html' -->
+    </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <link rel='stylesheet' href="../../static/common.css">
+    <link rel='stylesheet' href="../../static/homepost.css">
+    <span class='start'>
+        <p>
+           
+        </p>
+        오케이 입력값 확인!
+        <br>
+        <!-- 버튼 누르면 인풋할 구역이 나타나게 나타나는 효과는 서서히 드러나게? 이쁘게 -->
+        <!-- <a href="#input">버튼!</a> -->
+        <form method ='get' action='/giftapp/selecttheme/'>
+            {% csrf_token %}
+            <span class='inputarea'>
+                <div>
+                    <input type="text" name="name" value = '{{name}}'>
+                    <input type="number" name="pin" value ='{{pin}}'>
+                    <input type="number" name="date" value = '{{date}}'>
+                </div>
+            </span>
+           
+            <input type = 'submit' value = '자 이제 그럼 테마 입력하러 갈까?'>
+        </form>
+    </span>
+    
+</body>
+
+</html>
