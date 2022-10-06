@@ -40,8 +40,7 @@ a{
 
 /*메인화면 입력창 CSS*/
 input[type=text] {
-  margin-top: 80px;
-  margin-right: 10px;
+  margin-top: 90px;
   letter-spacing: 2px;
   width: 200px;
   height: 80px;
