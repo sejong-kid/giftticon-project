@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/연습.css">
+<link rel="stylesheet" href="/js/2page.js">
+
+<head>
+  <div class="index">
+    <ul>
+      테마를 선택해주세요
+    </ul>
+  </div>
+
+
+
+<body>
+    <input type="radio" class="btn" id="select" name="chice" value="spring" onClick="view_div('div1');hidden_div('div2','div3','div4');"/>
+    
+    <input type="radio" class="btn" id="select" name="chice" value="summer" onClick="view_div('div2');hidden_div('div1','div3','div4');"/>
+    <input type="radio" class="btn" id="select" name="chice" value="autumn" onClick="view_div('div3');hidden_div('div1','div2','div4');"/>
+    <input type="radio" class="btn" id="select" name="chice" value="winter" onClick="view_div('div4');hidden_div('div1','div2','div3');"/>
+    <input box="text" value="봄" name="chice" id="div1" style="display:none;">
+    <input box="text" value="여름" name="chice" id="div2" style="display:none;">
+    <input box="text" value="가을" name="chice" id="div3" style="display:none;">
+    <input box="text" value="겨울" name="chice" id="div4" style="display:none;">
+    <div class="img">
+      <div class="spring">
+        <label for="select">
+          <img alt="" src="
+        https://github.com/sejong-kid/giftticon-project/blob/master/img/spring.jpg?raw=true">
+        </label>
+      </div>
+      <div class="summer">
+        <label for="select">
+          <img alt="" src="
+          https://github.com/sejong-kid/giftticon-project/blob/master/img/summer.jpg?raw=true">
+        </label>
+      </div>
+      <div class="autumn">
+        <label for="select">
+          <img alt="" src="
+          https://github.com/sejong-kid/giftticon-project/blob/master/img/autumn.jpg?raw=true">
+        </label>
+      </div>
+      <div class="winter">
+        <label for="select">
+          <img alt="" src="
+          https://github.com/sejong-kid/giftticon-project/blob/master/img/winter.jpg?raw=true">
+        </label>
+      </div>
+    </div>
+
+      <script>
+    function view_div(val) {
+        document.getElementById(val).style.display = 'block';
+    }
+    function hidden_div(val1, val2, val3, val4) {
+        document.getElementById(val1).style.display = 'none';
+        document.getElementById(val2).style.display = 'none';
+        document.getElementById(val3).style.display = 'none';
+        document.getElementById(val4).style.display = 'none';
+
+      }
+      </script>
+</body>
+</head>
