@@ -1,0 +1,54 @@
+img{
+    
+  display: block;
+  padding: 0;
+  padding-top: 0px;  
+  padding-left: 50px;  
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  scale: 90%;
+}
+
+
+.btn {
+  opacity: 0;
+}
+
+.img img {
+  transition: all 0.2s linear;
+  filter: grayscale(100);
+}
+
+.spring.active-color {
+  color: blue;
+}
+
+.spring:hover img {
+  transform: scale(1.4);
+  filter: none;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+} 
+.summer:hover img {
+  transform: scale(1.4);
+  filter: none;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+} 
+.autumn:hover img {
+  transform: scale(1.4);
+  filter: none;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+} 
+.winter:hover img {
+  transform: scale(1.4);
+  filter: none;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px; 
+}
